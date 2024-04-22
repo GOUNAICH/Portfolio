@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>Portfolio website complete</title>
 </head>
@@ -40,50 +40,38 @@
     <main class="l-main">
         <!--===== HOME =====-->
         <div class="wrapper">
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title" style="color: aliceblue;">Hi,<br>I'am <span
-                            class="home__title-color">ABDESLAM</span><br> Web Developer
-                    </h1>
+            <div class="hero" id="home">
+                <div class="contanier">
+                    <div class="content">
+                        <div class="home__data">
+                            <h1 class="home__title" style="color: aliceblue;">Hi,<br>I'am <span
+                                    class="home__title-color">ABDESLAM</span><br> Web Developer
+                            </h1>
+                            <a href="#" class="button">Contact</a>
+                            <a href="assets/cv/CV_GOUNAICH Abdeslam.pdf" download class="button2">Download CV</a>
+                            <div class="icons">
+                                <div class="git">
+                                    <a href="https://github.com/GOUNAICH">
+                                        <i class="fab fa-github fa-2xl" style="color: #ffffff;"></i>
+                                    </a>
+                                </div>
+                                <div class="link">
+                                    <a href="https://www.linkedin.com/in/abdeslam-gounaich-757998279">
+                                        <i class="fab fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-                    <a href="#" class="button">Contact</a>
-                    <a href="assets/cv/CV_GOUNAICH Abdeslam.pdf" download class="button">Download CV</a>
+                    </div>
+                    <div class="hero-img">
+                        <img src="assets/img/contact.png" alt="">
+                    </div>
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/abdeslam-gounaich-757998279" class="home__social-icon"><i
-                            class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/GOUNAICH" class="home__social-icon"><i class='bx bxl-github'></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path
-                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path
-                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                            <image class="home__blob-img" x="70" href="assets/img/AbdeslamPNG.png" />
-                        </g>
-                    </svg>
-                </div>
-            </section>
-            <div class="box">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
             </div>
+
         </div>
+
         <!--===== ABOUT =====-->
 
         <section class="about section " id="about">
@@ -118,7 +106,6 @@
                 </div>
             </div>
         </section>
-
 
 
         <!--===== SKILLS =====-->
@@ -319,8 +306,8 @@
                     <a href="https://gounaich.github.io/Generate-PDF/" class="work__img">
                         <img src="assets/img/StudentManagement.png" alt="">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/Gym.png" alt="">
+                    <a href="https://gounaich.github.io/Portfolio/" class="work__img">
+                        <img src="assets/img/portfolio.png" alt="">
                     </a>
                 </div>
             </section>
@@ -334,14 +321,12 @@
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"
                             placeholder="Message"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
+                        <input type="button" value="Submit" class="contact__button">
                     </form>
                 </div>
             </section>
+        </div>
     </main>
-    </div>
-
-
 
 
     <!--===== FOOTER =====-->

@@ -199,6 +199,7 @@ img {
   row-gap: 5rem;
   padding: 4rem 0 5rem;
 }
+
 .wrapper {
   margin: 0;
   padding: 0;
@@ -207,6 +208,12 @@ img {
   overflow: hidden;
   background: linear-gradient(90deg, rgb(0, 0, 2) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 225, 1) 100%);
 }
+
+.contanier {
+  width: 85%;
+  margin: auto;
+}
+
 .home__data {
   align-self: center;
 }
@@ -251,6 +258,7 @@ img {
 .home__blob-img {
   width: 360px;
 }
+
 .box div {
   position: absolute;
   width: 40px;
@@ -332,10 +340,64 @@ img {
   }
 }
 
+/* start Hero */
+
+.hero {
+  padding-top: 80px;
+  background: url(assets/img/hero-bg.png);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .contanier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .content h4 {
+  color: #ffaa17;
+  font-size: 30px;
+}
+
+.hero .content h1 {
+  color: #fff;
+  font-size: 65px;
+  margin: 20px 0 10px;
+}
+
+.hero .content p {
+  color: #e4e4e4;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.hero .content .btn {
+  font-size: 18px;
+}
+
+.hero .hero-img img {
+  width: 450px;
+  animation: shake 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #ffaa17;
   color: #fff;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
@@ -343,8 +405,33 @@ img {
   transition: 0.3s;
 }
 
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+.button2 {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.icons {
+  margin-top: 100px;
+}
+
+.icons>div {
+  display: inline-block;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  /* Adjust margin */
+}
+
+.icons>div:hover {
+  transform: translateY(-5px);
+  /* Move the icon up by 5 pixels on hover */
+  transition: transform 0.3s ease;
+  /* Apply a smooth transition effect */
 }
 
 /* ===== ABOUT =====*/
@@ -527,6 +614,7 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+  justify-content: center;
 }
 
 .contact__button {
@@ -535,7 +623,13 @@ img {
   outline: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
-  margin-left: auto;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  margin-left: 40%;
 }
 
 /* ===== FOOTER =====*/
@@ -714,5 +808,190 @@ img {
   }
 }
 
+/* Media */
 
+@media(max-width:1200px) {
+  .contanier {
+    width: 90%;
+  }
 
+  .hero .content h1 {
+    font-size: 50px;
+  }
+
+  .hero .content p {
+    font-size: 25px;
+  }
+
+  .hero .hero-img img {
+    width: 380px;
+  }
+
+  .hero {
+    padding-bottom: 40px;
+  }
+
+  .about .content h3 {
+    font-size: 20px;
+  }
+
+  .about .content p {
+    margin-bottom: 50px;
+  }
+
+  .about .about-img img {
+    width: 380px;
+  }
+
+  .contact form {
+    width: 70%;
+  }
+
+}
+
+@media(max-width:900px) {
+  .hero .content h1 {
+    font-size: 40px;
+  }
+
+  .hero .hero-img img {
+    width: 340px;
+  }
+
+  header nav .nav-links a {
+    margin-left: 40px;
+  }
+
+  .about .contanier {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .about-img img {
+    width: 340px;
+  }
+
+  .about .about-img {
+    margin-bottom: 40px;
+  }
+
+  .contact form {
+    width: 80%;
+  }
+}
+
+@media(max-width:780px) {
+  .hero .contanier {
+    flex-direction: column-reverse;
+  }
+
+  .hero .hero-img img {
+    width: 380px;
+  }
+
+  .hero .content h1 {
+    font-size: 50px;
+  }
+
+  .hero .content {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+}
+
+@media(max-width:670px) {
+  .hero .content h1 {
+    font-size: 40px;
+  }
+
+  .hero .hero-img img {
+    width: 320px;
+  }
+
+  .contact form {
+    width: 90%;
+  }
+}
+
+@media(max-width:500px) {
+  .hero .hero-img img {
+    width: 280px;
+  }
+}
+
+@media(max-width:500px) {
+  .button2 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .contact__form {
+    width: 100px;
+    padding-top: 2rem;
+  }
+
+  .contact__container {
+    justify-items: center;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .contact__button {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .contact__button {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .contact__button {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contact__button {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills__names {
+    font-size: 12px;
+  }
+
+  .skills__percentage {
+    font-size: 12px;
+  }
+
+  .skills__icon {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .skills__names {
+    font-size: 10px;
+  }
+
+  .skills__percentage {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .skills__names {
+    font-size: 8px;
+  }
+
+  .skills__percentage {
+    font-size: 8px;
+  }
+}
